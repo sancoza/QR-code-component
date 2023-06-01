@@ -1,49 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-    --White: hsl(0, 0%, 100%);
---Light-gray: hsl(212, 45%, 89%);
---Grayish-blue: hsl(220, 15%, 55%);
---Dark-blue: hsl(218, 44%, 22%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
 }
 body {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    background: var(--Light-gray);
-    
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background: var(--Light-gray);
 }
-p{
-    font-size: 15px;
-    color: var(--Light-gray);
+
+p {
+  font-size: 15px;
+  color: var(--Grayish-blue);
 }
 
 .card-container {
- text-align: center;
-   height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .card {
-     height: 60vh;
-    width: 240px;
-       background: var(--White);
-       border-radius: 9px;
-       padding: 10px;
+  max-width: 300px;
+  background: var(--White);
+  border-radius: 9px;
+  padding: 10px;
 }
 
 .qr-code img {
-    width: 100%;
-    border-radius: 9px 9px 0 0;
-    
+  width: 100%;
+  border-radius: 9px 9px 0 0;
 }
-.card h3 {
-    color: var(--Dark-blue);
+.card h1 {
+  color: var(--Dark-blue);
+  font-size: 1.2rem;
 }
 
-@media screen and (max-width:375px) {
-    .card {
-        height: 66vh;
-    }
-}
